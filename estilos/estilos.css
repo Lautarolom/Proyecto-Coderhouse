@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*estilos del container*/
+.container__grid{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "header"
+                         "main"
+                         "footer"                
+}
+
+.logo{
+    width: 13rem;
+}
+
+/*imagen de fondo*/
+.cuerpo{
+    background-image: url(https://i.picsum.photos/id/1025/4951/3301.jpg?hmac=_aGh5AtoOChip_iaMo8ZvvytfEojcgqbCH7dzaz-H8Y);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover; 
+    overflow-x: hidden;
+}
+
+/*encabezado*/
+header{
+    grid-area: header;
+    background-color: #8AC926;
+    width: auto;
+    height: 8rem;
+	border: 2px solid black;
+}
+
+/*navegador*/
+.navbar{
+    display: flex;
+    position: relative;
+    bottom: 70px;
+    font-size: 30px;
+    word-spacing: 100px;
+    justify-content: space-around;
+
+}
+
+
+li {
+    display: inline-block
+}
+
+.paginas{
+    color: white;
+    font-weight: bold;
+    font-family: 'Poppins';
+}
+
+h1{
+    margin: 8px;
+    color: rgb(21, 247, 0);
+    text-align: center;
+    font-family: 'Roboto';
+    }
+
+/*contenedor*/
+.containerGrid{
+    width: 240px;
+    height: 270px;
+    margin: 10px;
+    background-color: #FFFF3F;
+    border: double black;
+}
+
+main{
+    grid-area: main;
+}
+
+.containerGrid__texto{
+    color: black;
+    padding: 5px;
+    font-family: 'Poppins';
+    font-weight: bolder;
+}
+
+
+
+/*copyright*/
+footer{
+    grid-area: footer;
+    margin-top: 21.4rem;
+}
+
+.derechos{
+    color: black;
+    font-weight: bolder;
+    font-family: 'Poppins';
+    background-color: grey;
+    text-align: center;
+}
+
+
+@media only screen and (min-width: 1023px) and (max-width:1550px){
+    
+    header{
+        height: 11rem;
+    }
+
+    .navbar{
+        position: relative;
+        bottom: 0px;
+        font-size: 25px;
+    }
+
+    h1{
+        color: red;
+    }
+}
+
+
+/*vista de tablet*/
+@media only screen and (min-width: 768px) and (max-width:1023px){
+
+    header{
+        height: 8rem;
+    }
+
+    .logo{
+        width: 10rem;
+    }
+
+    .navbar{
+        position: relative;
+        bottom: 0px;
+        font-size: 25px;
+        word-spacing: 25px;
+        left: 5%;
+    }
+
+    h1{
+        color: rgb(18, 7, 173);
+    }
+}
+
+/*vista de celular*/
+@media only screen and (max-width: 767px){
+    
+    header{
+        height: 8rem;
+    }
+    
+    .logo{
+        width: 10rem;
+    }
+
+    .navbar{
+        position: relative;
+        bottom: 0px;
+        width: 100%;
+        font-size: 15px;
+        word-spacing: 20px;
+        left: 5%;
+    }
+
+    h1{
+        color: rgb(128, 8, 128);
+    }
+}
