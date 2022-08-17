@@ -1,0 +1,68 @@
+$color-primario: #55A;
+
+@media only screen and (min-width: 1023px) and (max-width:1550px){
+    
+    header{
+        height: 11rem;
+    }
+
+    .navbar{
+        position: relative;
+        bottom: 0px;
+        font-size: 25px;
+    }
+
+    h1{
+        color: red;
+    }
+}
+
+
+/*vista de tablet*/
+@media only screen and (min-width: 768px) and (max-width:1023px){
+
+    header{
+        height: 8rem;
+    }
+
+    .logo{
+        width: 10rem;
+    }
+
+    .navbar{
+        position: relative;
+        bottom: 0px;
+        font-size: 25px;
+        word-spacing: 25px;
+        left: 5%;
+    }
+
+    h1{
+        color: rgb(18, 7, 173);
+    }
+}
+
+/*vista de celular*/
+@media only screen and (max-width: 767px){
+    
+    header{
+        height: 8rem;
+    }
+    
+    .logo{
+        width: 10rem;
+    }
+
+    .navbar{
+        position: relative;
+        bottom: 0px;
+        width: 100%;
+        font-size: 15px;
+        word-spacing: 20px;
+        left: 5%;
+    }
+
+    h1{
+        color: rgb(240, 236, 0);
+    }
+}
