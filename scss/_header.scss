@@ -2,6 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
 
+@import "variables";
+
 *{
     margin:0;
     padding: 0;
@@ -34,7 +36,7 @@
 /*encabezado*/
 header{
     grid-area: header;
-    background-color: #8AC926;
+    background-color: map-get($estilos, color);
     width: auto;
     height: 8rem;
 	border: 2px solid black;
