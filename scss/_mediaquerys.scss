@@ -1,6 +1,6 @@
 @import "mixins";
 
-
+/*
 @media only screen and (min-width: 1023px) and (max-width:1550px){
     
     header{
@@ -17,9 +17,10 @@
         color: red;
     }
 }
-
+*/
 
 /*vista de tablet*/
+/*
 @media only screen and (min-width: 768px) and (max-width:1023px){
 
     header{
@@ -42,8 +43,10 @@
         color: rgb(18, 7, 173);
     }
 }
+*/
 
 /*vista de celular*/
+/*
 @media only screen and (max-width: 767px){
     
     header{
@@ -67,3 +70,4 @@
         color: rgb(240, 236, 0);
     }
 }
+*/

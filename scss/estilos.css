@@ -29,7 +29,7 @@
 }
 
 /*encabezado*/
-header {
+.headerRaro {
   grid-area: header;
   background-color: #8AC926;
   width: auto;
@@ -38,19 +38,22 @@ header {
 }
 
 /*navegador*/
-.navbar {
-  display: flex;
-  position: relative;
-  bottom: 70px;
-  font-size: 30px;
-  word-spacing: 100px;
-  justify-content: space-around;
-}
+/*
+.navbar{
+    display: flex;
+    position: relative;
+    bottom: 70px;
+    font-size: 30px;
+    word-spacing: 100px;
+    justify-content: space-around;
 
+}
+*/
+/* 
 li {
-  display: inline-block;
-}
-
+    display: inline-block
+} 
+*/
 .paginas {
   text-decoration: none;
   color: white;
@@ -67,13 +70,14 @@ li {
   color: black;
 }
 
-h1 {
-  margin: 8px;
-  color: rgb(21, 247, 0);
-  text-align: center;
-  font-family: "Roboto";
-}
-
+/*
+h1{
+    margin: 8px;
+    color: rgb(21, 247, 0);
+    text-align: center;
+    font-family: 'Roboto';
+    }
+*/
 /*contenedor*/
 .containerGrid {
   width: 240px;
@@ -95,68 +99,87 @@ main {
 }
 
 /*copyright*/
-footer {
-  grid-area: footer;
-  margin-top: 21.4rem;
+/*
+footer{
+    grid-area: footer;
+    margin-top: 21.4rem;
 }
+*/
+/*
+.derechos{
+    color: black;
+    font-weight: bolder;
+    font-family: 'Poppins';
+    background-color: grey;
+    text-align: center;
+}
+*/
+/*
+@media only screen and (min-width: 1023px) and (max-width:1550px){
 
-.derechos {
-  color: black;
-  font-weight: bolder;
-  font-family: "Poppins";
-  background-color: grey;
-  text-align: center;
-}
+    header{
+        height: 11rem;
+    }
 
-@media only screen and (min-width: 1023px) and (max-width: 1550px) {
-  header {
-    height: 11rem;
-  }
-  .navbar {
-    position: relative;
-    bottom: 0px;
-    font-size: 25px;
-  }
-  h1 {
-    color: red;
-  }
+    .navbar{
+        position: relative;
+        @include mixinBottom;
+        font-size: 25px;
+    }
+
+    h1{
+        color: red;
+    }
 }
+*/
 /*vista de tablet*/
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-  header {
-    height: 8rem;
-  }
-  .logo {
-    width: 10rem;
-  }
-  .navbar {
-    position: relative;
-    bottom: 0px;
-    font-size: 25px;
-    word-spacing: 25px;
-    left: 5%;
-  }
-  h1 {
-    color: rgb(18, 7, 173);
-  }
+/*
+@media only screen and (min-width: 768px) and (max-width:1023px){
+
+    header{
+        height: 8rem;
+    }
+
+    .logo{
+        width: 10rem;
+    }
+
+    .navbar{
+        position: relative;
+        @include mixinBottom;
+        font-size: 25px;
+        word-spacing: 25px;
+        left: 5%;
+    }
+
+    h1{
+        color: rgb(18, 7, 173);
+    }
 }
+*/
 /*vista de celular*/
-@media only screen and (max-width: 767px) {
-  header {
-    height: 8rem;
-  }
-  .logo {
-    width: 10rem;
-  }
-  .navbar {
-    position: relative;
-    bottom: 0px;
-    width: 100%;
-    font-size: 15px;
-    word-spacing: 20px;
-    left: 5%;
-  }
-  h1 {
-    color: rgb(240, 236, 0);
-  }
-}/*# sourceMappingURL=estilos.css.map */
+/*
+@media only screen and (max-width: 767px){
+
+    header{
+        height: 8rem;
+    }
+
+    .logo{
+        width: 10rem;
+    }
+
+    .navbar{
+        position: relative;
+        bottom: 0px;
+        width: 100%;
+        font-size: 15px;
+        word-spacing: 20px;
+        left: 5%;
+    }
+
+    h1{
+        color: rgb(240, 236, 0);
+    }
+}
+*//*# sourceMappingURL=estilos.css.map */

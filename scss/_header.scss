@@ -34,7 +34,7 @@
 }
 
 /*encabezado*/
-header{
+.headerRaro{
     grid-area: header;
     background-color: map-get($estilos, color);
     width: auto;
@@ -43,6 +43,7 @@ header{
 }
 
 /*navegador*/
+/*
 .navbar{
     display: flex;
     position: relative;
@@ -52,11 +53,13 @@ header{
     justify-content: space-around;
 
 }
+*/
 
-
+/* 
 li {
     display: inline-block
-}
+} 
+*/
 
 .paginas{
     text-decoration: none;
@@ -74,12 +77,14 @@ li {
     color:black;
 }
 
+/*
 h1{
     margin: 8px;
     color: rgb(21, 247, 0);
     text-align: center;
     font-family: 'Roboto';
     }
+*/
 
 /*contenedor*/
 .containerGrid{
@@ -104,11 +109,14 @@ main{
 
 
 /*copyright*/
+/*
 footer{
     grid-area: footer;
     margin-top: 21.4rem;
 }
+*/
 
+/*
 .derechos{
     color: black;
     font-weight: bolder;
@@ -116,3 +124,4 @@ footer{
     background-color: grey;
     text-align: center;
 }
+*/
