@@ -1,0 +1,45 @@
+.cuerpo2{
+    background-image: url(https://i.picsum.photos/id/1019/5472/3648.jpg?hmac=2mFzeV1mPbDvR0WmuOWSiW61mf9DDEVPDL0RVvg1HPs);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover; 
+    overflow-x: hidden;
+}
+
+.fondo{
+    background-color: rgb(114, 187, 5);
+    border: 1px solid black;
+    font-size: 30px;
+  }
+  .spacing{
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    word-spacing: 100px;
+  }
+
+  .footer{
+    background-color: #141517;
+    font-weight: bolder;
+    font-family: 'Poppins';
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 3px;
+    color: grey;
+    border-top: 3px solid black;
+  }
+  .redes{
+    background-color: #292a2c;
+    padding-bottom: 1rem;
+    animation: float 4s ease-in-out infinite;
+  }
+
+  .redesImg{
+    text-align: center;
+  }
+  .blanco{
+    background: rgb(196, 190, 190);
+    margin-top: 2rem;
+    border: 2px solid black;
+    padding: 20px;
+  }

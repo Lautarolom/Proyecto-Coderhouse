@@ -6,80 +6,156 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../scss/estilos.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="icon" type="favicon/x-icon" href="../images/logo - icono.png"/>
-    <style>
-      .fondo{
-        background-color: rgb(114, 187, 5);
-        border: 1px solid black;
-        font-size: 30px;
-      }
-      .spacing{
-        display: flex;
-        position: relative;
-        justify-content: space-around;
-        word-spacing: 100px;
-      }
-    </style>
     <title>Donaciones</title>
 </head>
-<body>
+
+<body class="cuerpo2">
+
+  <!--Header-->
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark fondo">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="../images/logo.png" width="120">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../pages/galeria.html">Galería</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../pages/campañas.html">Campañas</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../pages/donaciones.html">Donar</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../pages/pruebas.html">Pruebas</a>
-            </li>
-          </ul>
-        </div>
+  <nav class="navbar navbar-expand-lg navbar-dark fondo">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html">
+        <img src="../images/logo.png" width="120">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/galeria.html">Galería</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/campañas.html">Campañas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/donaciones.html">Donar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/pruebas.html">Pruebas</a>
+          </li>
+        </ul>
       </div>
-    </nav>
-    </header>
+    </div>
+  </nav>
+  </header>
 
-    <h2>Formulario</h2>
-    <section>
-    <form action="">
-        <div>
-            <label for="Ingrese su Nombre"></label>
-            <input type="text" name="nombre" id="" placeholder="Nombre" required>
+     <!--Cuerpo-->
+     <section>
+        <div class="container-md blanco animate__bounceInLeft animate__animated">
+      <h2>Datos personales</h2>
+      <form class="row g-3">
+        <div class="col-md-4">
+          <label for="inputName" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="inputName"  placeholder="Federico" required>
         </div>
-        <div>
-            <label for="E-mail"></label>E-mail
-            <input type="text" id="" placeholder="aaa@gmail.com" required>
+        <div class="col-md-4">
+          <label for="inputSurname" class="form-label">Apellido</label>
+          <input type="text" class="form-control" id="inputSurname" placeholder="Rodriguez" required>
         </div>
-        <div>¡Suscribete a nuestra newsletter y recibe toda la información!
-			<input type="checkbox" name="acepta" value="1">
-        </div>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Reiniciar formulario">
+        <div class="col-8">
+          <label for="inputMail" class="form-label">Correo electrónico</label>
+          <input type="email" class="form-control" id="inputMail" placeholder="test@example.com" required>
         </div>
 
-    </form>
-    </section>
+        <div class="col-md-6">
+          <label for="inputCountry" class="form-label">País de residencia</label>
+          <input type="text" class="form-control" id="inputCountry" placeholder="Argentina" required>
+        </div>
+        <div class="col-md-4">
+          <label for="inputCity" class="form-label">Ciudad</label>
+          <input type="text" class="form-control" id="inputCity" placeholder="CABA" required>
+        </div>
+        <div class="col-md-2">
+          <label for="inputZip" class="form-label">Código postal</label>
+          <input type="text" class="form-control" id="inputZip" placeholder="1404" required>
+        </div>
 
-         <!--Script de bootsrap-->
-         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <div class="col-10">
+          <label for="inputAddress" class="form-label">Dirección</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="Cnel. Ramón L. Falcón 1839" required>
+        </div>
+        <div class="col-3">
+          <label for="inputCode" class="form-label">Cód. área</label>
+          <div class="input-group">
+            <div class="input-group-text">+</div>
+            <input type="text" class="form-control" id="inputCode" placeholder="11" required>
+          </div>
+        </div>
+        <div class="col-4">
+          <label for="inputCity" class="form-label">Número telefónico</label>
+          <input type="text" class="form-control" id="inputPhone" placeholder="41245437" required>
+        </div>
+        <div class="col-12">
+          <label for="inputDonate" class="form-label">Monto a donar</label>
+           <div class="input-group">
+           <span class="input-group-text">$</span>
+           <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" id="inputDonate" placeholder="100" required>
+           <span class="input-group-text">.00</span>
+          </div>
+       </div>
+
+       <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck" required>
+            <label class="form-check-label" for="gridCheck">
+              Aceptar los términos y condiciones
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Recibir Novedades
+            </label>
+          </div>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">¡Dona ahora!</button>
+        </div>
+        
+      </form>
+    </div>
+  </section>
+
+  <!--Footer-->
+  <footer class="fixed-bottom">
+      <div class="redes">
+
+         <p class="footer">© Todos los derechos reservados</p>
+      
+        <div class="redesImg container-fluid row justify-content-lg-center">
+
+        <div class="col-1 animate__heartBeat animate__animated">
+          <a href="https://www.instagram.com/lautii456/">
+          <img src="/images/logos de redes/instagrama.png" alt="Instagram" width="38" height="30">
+          </a>
+        </div>
+
+        <div class="col-1 animate__heartBeat animate__animated">
+          <a href="https://twitter.com/Bemba76472940">
+          <img src="/images/logos de redes/twitter2.png" alt="Twitter" width="38" height="30">
+          </a>
+        </div>
+
+        <div class="col-1 animate__heartBeat animate__animated">
+          <a href="https://www.facebook.com/ZooCBS/">
+            <img src="/images/logos de redes/facebookbl.png" alt="Facebook" width="38" height="30">
+          </a>
+        </div>
+        
+    </div>
+  </footer>
+  
+     <!--Script de bootsrap-->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
