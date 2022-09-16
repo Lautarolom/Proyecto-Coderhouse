@@ -7,6 +7,13 @@
   box-sizing: border-box;
 }
 
+.redes{
+  animation: float 4s ease-in-out infinite;
+}
+
+
+
+
 /*estilos del container*/
 .container__grid {
   display: grid;
@@ -19,9 +26,10 @@
   width: 13rem;
 }
 
-/*imagen de fondo*/
+/*imagen de fondo
+https://i.picsum.photos/id/1025/4951/3301.jpg?hmac=_aGh5AtoOChip_iaMo8ZvvytfEojcgqbCH7dzaz-H8Y*/
 .cuerpo {
-  background-image: url(https://i.picsum.photos/id/1025/4951/3301.jpg?hmac=_aGh5AtoOChip_iaMo8ZvvytfEojcgqbCH7dzaz-H8Y);
+  background-image: url(https://i.picsum.photos/id/1019/5472/3648.jpg?hmac=2mFzeV1mPbDvR0WmuOWSiW61mf9DDEVPDL0RVvg1HPs);
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;

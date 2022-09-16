@@ -21,29 +21,39 @@
       }
 
       .footer{
-        background-color: rgb(100, 100, 100);
+        background-color: #141517;
         font-weight: bolder;
         font-family: 'Poppins';
         text-align: center;
         font-size: 1.2rem;
+        padding: 3px;
+        color: grey;
+        border-top: 3px solid black;
       }
       .redes{
-        background-color: rgb(53, 53, 53);
+        background-color: #292a2c;
+        padding-bottom: 1rem;
+        animation: float 4s ease-in-out infinite;
       }
 
       .redesImg{
         text-align: center;
-                        }
-    
+      }
+      .blanco{
+        background: rgb(196, 190, 190);
+        margin-top: 2rem;
+        border: 2px solid black;
+        padding: 20px;
+      }
     </style>
     <title>Document</title>
 </head>
 
-<body>
+<body class="cuerpo">
   <header>
   <nav class="navbar navbar-expand-lg navbar-dark fondo">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="../index.html">
         <img src="../images/logo.png" width="120">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,7 +62,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="../pages/galeria.html">Galería</a>
@@ -74,33 +84,111 @@
     </div>
   </nav>
   </header>
-  <h1>asd</h1>
+  
+     <section>
+        <div class="container-md blanco">
+      <h2>Datos personales</h2>
+      <form class="row g-3">
+        <div class="col-md-4">
+          <label for="inputName" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="validationServer01"  placeholder="Federico" required>
+          <div class="invalid-feedback"></textarea>
+            Please enter a message in the textarea.
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="inputSurname" class="form-label">Apellido</label>
+          <input type="text" class="form-control" id="inputSurname" placeholder="Rodriguez" required>
+        </div>
+        <div class="col-8">
+          <label for="inputAddress" class="form-label">Correo electrónico</label>
+          <input type="email" class="form-control" id="inputMail" placeholder="test@example.com" required>
+        </div>
+
+        <div class="col-md-6">
+          <label for="inputCity" class="form-label">País de residencia</label>
+          <input type="text" class="form-control" id="inputCity" placeholder="Argentina" required>
+        </div>
+        <div class="col-md-4">
+          <label for="inputCity" class="form-label">Ciudad</label>
+          <input type="text" class="form-control" id="inputCity" placeholder="CABA" required>
+        </div>
+        <div class="col-md-2">
+          <label for="inputZip" class="form-label">Código postal</label>
+          <input type="text" class="form-control" id="inputZip" placeholder="1404" required>
+        </div>
+
+        <div class="col-10">
+          <label for="inputAddress" class="form-label">Dirección</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="Cnel. Ramón L. Falcón 1839" required>
+        </div>
+        <div class="col-3">
+          <label for="inputCity" class="form-label">Cód. área</label>
+          <div class="input-group">
+            <div class="input-group-text">+</div>
+            <input type="text" class="form-control" id="inputCode" placeholder="11" required>
+          </div>
+        </div>
+        <div class="col-4">
+          <label for="inputCity" class="form-label">Número telefónico</label>
+          <input type="text" class="form-control" id="inputPhone" placeholder="41245437" required>
+        </div>
+        <div class="col-12">
+          <label for="inputCity" class="form-label">Monto a donar</label>
+           <div class="input-group">
+           <span class="input-group-text">$</span>
+           <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" placeholder="100" required>
+           <span class="input-group-text">.00</span>
+          </div>
+       </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck" required>
+            <label class="form-check-label" for="gridCheck">
+              Acepto los terminos y condiciones
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Recibir Notificaciones
+            </label>
+          </div>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">¡Dona ahora!</button>
+        </div>
+        
+      </form>
+    </div>
+  </section>
 
   <footer class="fixed-bottom">
       <div class="redes">
 
          <p class="footer">© Todos los derechos reservados</p>
       
-        <div class="redesImg container-fluid row">
+        <div class="redesImg container-fluid row justify-content-lg-center">
 
-        <div class="col">
-          <a href="https://www.facebook.com/ZooCBS/">
-          <img src="/images/facebook.png" alt="" width="50" height="30">
-          </a>
-        </div>
 
-        <div class="col">
+        <div class="col-1">
           <a href="https://www.instagram.com/lautii456/">
-          <img src="/images/instagram.png" alt="" width="50" height="30">
+          <img src="/images/logos de redes/instagrama.png" alt="Instagram" width="38" height="30">
           </a>
         </div>
 
-        <div class="col">
-          <a href="#">
-          <img src="/images/twitter.png" alt="" width="50" height="30">
+        <div class="col-1">
+          <a href="https://twitter.com/Bemba76472940">
+          <img src="/images/logos de redes/twitter2.png" alt="Twitter" width="38" height="30">
           </a>
         </div>
 
+        <div class="col-1">
+          <a href="https://www.facebook.com/ZooCBS/">
+            <img src="/images/logos de redes/facebookbl.png" alt="Facebook" width="38" height="30">
+          </a>
+        </div>
+        
     </div>
   </footer>
   
